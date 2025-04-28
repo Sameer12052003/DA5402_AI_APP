@@ -1,3 +1,7 @@
 streamlit
 requests
 xgboost
+matplotlib
+datetime
+pandas
+plotly
