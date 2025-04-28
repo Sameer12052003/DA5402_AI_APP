@@ -43,4 +43,4 @@ services:
     ports:
       - "3000:3000"  # Grafana Web UI on port 3000
     volumes:
-      - ./grafana_data:/var/lib/grafana  # <<<<<< Add this line
+      - ./grafana_data:/var/lib/grafana  
