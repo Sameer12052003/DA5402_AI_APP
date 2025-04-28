@@ -1,0 +1,68 @@
+schema: '2.0'
+stages:
+  data_pull:
+    cmd: python ml_pipeline/data_pull.py
+  datasplit:
+    cmd: python ml_pipeline/data_split.py
+    deps:
+    - path: credit_card_data/creditcard.csv
+      hash: md5
+      md5: e90efcb83d69faf99fcab8b0255024de
+      size: 150828752
+    - path: ml_pipeline/data_split.py
+      hash: md5
+      md5: 42c9666bb2e0fe276606e8c8d15d1128
+      size: 1376
+    outs:
+    - path: dataset_splits/train.csv
+      hash: md5
+      md5: ec77cf358f497cc2992b96a5bde6c615
+      size: 90661779
+    - path: dataset_splits/val.csv
+      hash: md5
+      md5: 9951d0884dfb76337b96b24be659a3ff
+      size: 15108249
+    - path: shared_folder/test.csv
+      hash: md5
+      md5: d3f31bacdb6d3c70444bc985e2d294b6
+      size: 45332621
+  train:
+    cmd: python ml_pipeline/train.py
+    deps:
+    - path: dataset_splits/train.csv
+      hash: md5
+      md5: ec77cf358f497cc2992b96a5bde6c615
+      size: 90661779
+    - path: dataset_splits/val.csv
+      hash: md5
+      md5: 9951d0884dfb76337b96b24be659a3ff
+      size: 15108249
+    - path: ml_pipeline/train.py
+      hash: md5
+      md5: e2e88a0d4148127fa6b97c2158660c96
+      size: 5251
+    outs:
+    - path: shared_folder/model.pkl
+      hash: md5
+      md5: 25747937df2ca752969b931960156152
+      size: 648701
+  evaluate:
+    cmd: python ml_pipeline/evaluate.py
+    deps:
+    - path: dataset_splits/val.csv
+      hash: md5
+      md5: 9951d0884dfb76337b96b24be659a3ff
+      size: 15108249
+    - path: ml_pipeline/evaluate.py
+      hash: md5
+      md5: e9f206f10c18d0e564d67ad5b532b45f
+      size: 969
+    - path: shared_folder/model.pkl
+      hash: md5
+      md5: 25747937df2ca752969b931960156152
+      size: 648701
+    outs:
+    - path: shared_folder/classification_report.txt
+      hash: md5
+      md5: 3230143449bdf7faa764736f71e0124d
+      size: 334

@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pandas
+numpy
+requests
+mlflow
+scikit-learn 
+imblearn
+joblib  
+xgboost
+apscheduler
+prometheus_fastapi_instrumentator
+prometheus_client 

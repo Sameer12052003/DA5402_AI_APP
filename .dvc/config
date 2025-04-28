@@ -1,0 +1,9 @@
+[core]
+    remote = myremote
+['remote "gdrive_remote"']
+    url = gdrive://1XrUdzF66J_rIN04KFnfh43gLLOXbGrg-
+    gdrive_use_service_account = false
+['remote "myremote"']
+    url = gdrive://1mBZCemtgfnxKj1VE0l6p1ZC7Tp9AsI9H
+    gdrive_use_service_account = true
+    gdrive_service_account_json_file_path = D:/IITM academics and courses/IITM courses/MLOPS/Assignment5/assignment-05-Sameer12052003/my-project-95161-454306-15827cf726d1.json

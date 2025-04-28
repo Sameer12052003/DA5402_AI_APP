@@ -1,0 +1,329 @@
+2025-04-22 20:15:56,380 [WARNING] - Retrying (Retry(total=6, connect=6, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F18408B010>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=optuna_xgboost_hyperparameter_tuning
+2025-04-22 20:16:04,730 [WARNING] - Retrying (Retry(total=5, connect=5, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F185715910>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=optuna_xgboost_hyperparameter_tuning
+2025-04-22 20:16:50,963 [INFO] - Loading and preprocessing data...
+2025-04-22 20:16:52,612 [INFO] - Original training samples: 170884
+2025-04-22 20:16:53,085 [INFO] - Resampled training samples after SMOTE: 341166
+2025-04-22 20:16:53,085 [INFO] - Starting Optuna hyperparameter tuning...
+2025-04-22 20:16:53,584 [INFO] - Trial 0 - Params: {'n_estimators': 250, 'max_depth': 10, 'learning_rate': 0.22227824312530747, 'subsample': 0.7993292420985183, 'colsample_bytree': 0.5780093202212182, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 20:17:25,669 [INFO] - Trial 0 - Accuracy: 0.9994, F1 Score: 0.9223
+2025-04-22 20:17:25,786 [INFO] - Trial 1 - Params: {'n_estimators': 162, 'max_depth': 3, 'learning_rate': 0.2611910822747312, 'subsample': 0.8005575058716043, 'colsample_bytree': 0.8540362888980227, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 20:17:36,987 [INFO] - Trial 1 - Accuracy: 0.9970, F1 Score: 0.7695
+2025-04-22 20:17:37,142 [INFO] - Trial 2 - Params: {'n_estimators': 108, 'max_depth': 10, 'learning_rate': 0.2514083658321223, 'subsample': 0.6061695553391381, 'colsample_bytree': 0.5909124836035503, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 20:17:49,671 [INFO] - Trial 2 - Accuracy: 0.9994, F1 Score: 0.9272
+2025-04-22 20:17:49,821 [INFO] - Trial 3 - Params: {'n_estimators': 173, 'max_depth': 5, 'learning_rate': 0.16217936517334897, 'subsample': 0.7159725093210578, 'colsample_bytree': 0.645614570099021, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 20:18:03,375 [INFO] - Trial 3 - Accuracy: 0.9989, F1 Score: 0.8844
+2025-04-22 20:18:03,527 [INFO] - Trial 4 - Params: {'n_estimators': 345, 'max_depth': 4, 'learning_rate': 0.09472194807521325, 'subsample': 0.6831809216468459, 'colsample_bytree': 0.728034992108518, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 20:18:25,374 [INFO] - Trial 4 - Accuracy: 0.9980, F1 Score: 0.8156
+2025-04-22 20:18:25,538 [INFO] - Trial 5 - Params: {'n_estimators': 414, 'max_depth': 4, 'learning_rate': 0.15912798713994736, 'subsample': 0.7962072844310213, 'colsample_bytree': 0.5232252063599989, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 20:18:49,337 [INFO] - Trial 5 - Accuracy: 0.9992, F1 Score: 0.9048
+2025-04-22 20:18:49,531 [INFO] - Trial 6 - Params: {'n_estimators': 343, 'max_depth': 4, 'learning_rate': 0.02886496196573106, 'subsample': 0.9744427686266666, 'colsample_bytree': 0.9828160165372797, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 20:19:10,293 [INFO] - Trial 6 - Accuracy: 0.9924, F1 Score: 0.6563
+2025-04-22 20:19:10,481 [INFO] - Trial 7 - Params: {'n_estimators': 424, 'max_depth': 5, 'learning_rate': 0.03832491306185132, 'subsample': 0.8421165132560784, 'colsample_bytree': 0.7200762468698007, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 20:19:57,725 [INFO] - Trial 7 - Accuracy: 0.9972, F1 Score: 0.7755
+2025-04-22 20:19:58,231 [INFO] - Trial 8 - Params: {'n_estimators': 148, 'max_depth': 6, 'learning_rate': 0.019972671123413333, 'subsample': 0.954660201039391, 'colsample_bytree': 0.6293899908000085, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 20:20:19,306 [INFO] - Trial 8 - Accuracy: 0.9940, F1 Score: 0.6837
+2025-04-22 20:20:19,634 [INFO] - Trial 9 - Params: {'n_estimators': 365, 'max_depth': 5, 'learning_rate': 0.16081972614156514, 'subsample': 0.7733551396716398, 'colsample_bytree': 0.5924272277627636, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 20:20:58,085 [INFO] - Trial 9 - Accuracy: 0.9993, F1 Score: 0.9151
+2025-04-22 20:20:58,440 [INFO] - Trial 10 - Params: {'n_estimators': 254, 'max_depth': 10, 'learning_rate': 0.29116576212848116, 'subsample': 0.5148027085118481, 'colsample_bytree': 0.8259332753890893, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 20:21:33,884 [INFO] - Trial 10 - Accuracy: 0.9994, F1 Score: 0.9272
+2025-04-22 20:21:34,265 [INFO] - Trial 11 - Params: {'n_estimators': 254, 'max_depth': 10, 'learning_rate': 0.2941449319059625, 'subsample': 0.5199086519616609, 'colsample_bytree': 0.8692027723625104, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 20:22:07,615 [INFO] - Trial 11 - Accuracy: 0.9995, F1 Score: 0.9335
+2025-04-22 20:22:08,015 [INFO] - Trial 12 - Params: {'n_estimators': 113, 'max_depth': 8, 'learning_rate': 0.2362035439435593, 'subsample': 0.5154216970334154, 'colsample_bytree': 0.9168026515544779, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 20:22:29,051 [INFO] - Trial 12 - Accuracy: 0.9995, F1 Score: 0.9385
+2025-04-22 20:22:29,424 [INFO] - Trial 13 - Params: {'n_estimators': 237, 'max_depth': 8, 'learning_rate': 0.21458458219165255, 'subsample': 0.5038813712256407, 'colsample_bytree': 0.9655133730133555, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 20:23:02,221 [INFO] - Trial 13 - Accuracy: 0.9994, F1 Score: 0.9223
+2025-04-22 20:23:02,661 [INFO] - Trial 14 - Params: {'n_estimators': 198, 'max_depth': 8, 'learning_rate': 0.29810510207916185, 'subsample': 0.5893048289960583, 'colsample_bytree': 0.8859620061900357, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 20:23:31,031 [INFO] - Trial 14 - Accuracy: 0.9994, F1 Score: 0.9297
+2025-04-22 20:23:31,406 [INFO] - Trial 15 - Params: {'n_estimators': 487, 'max_depth': 8, 'learning_rate': 0.20542060319274563, 'subsample': 0.5937663157166837, 'colsample_bytree': 0.9098051829114833, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 20:24:24,262 [INFO] - Trial 15 - Accuracy: 0.9993, F1 Score: 0.9151
+2025-04-22 20:24:24,624 [INFO] - Trial 16 - Params: {'n_estimators': 101, 'max_depth': 9, 'learning_rate': 0.25422843558413716, 'subsample': 0.6460870052114984, 'colsample_bytree': 0.7904906991719274, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 20:24:56,237 [INFO] - Trial 16 - Accuracy: 0.9993, F1 Score: 0.9116
+2025-04-22 20:24:56,582 [INFO] - Trial 17 - Params: {'n_estimators': 285, 'max_depth': 7, 'learning_rate': 0.09799942725768182, 'subsample': 0.5436707693070663, 'colsample_bytree': 0.9292375745198874, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 20:25:35,646 [INFO] - Trial 17 - Accuracy: 0.9994, F1 Score: 0.9223
+2025-04-22 20:25:36,068 [INFO] - Trial 18 - Params: {'n_estimators': 220, 'max_depth': 9, 'learning_rate': 0.19615749128633023, 'subsample': 0.8949828442656665, 'colsample_bytree': 0.7819725622864638, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 20:26:09,761 [INFO] - Trial 18 - Accuracy: 0.9995, F1 Score: 0.9347
+2025-04-22 20:26:10,183 [INFO] - Trial 19 - Params: {'n_estimators': 289, 'max_depth': 9, 'learning_rate': 0.24044715559250585, 'subsample': 0.562135383220603, 'colsample_bytree': 0.8590097488883557, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 20:26:47,666 [INFO] - Trial 19 - Accuracy: 0.9994, F1 Score: 0.9309
+2025-04-22 20:26:47,792 [INFO] - Best trial: 12, Best accuracy: 0.9995
+2025-04-22 20:26:47,792 [INFO] - Training final model with best hyperparameters...
+2025-04-22 20:27:01,747 [INFO] - Saved best model to best_model/model.pkl
+2025-04-22 20:27:07,750 [INFO] - Final model logged and registered with MLflow.
+2025-04-22 23:13:16,300 [INFO] - Loading and preprocessing data...
+2025-04-22 23:13:17,669 [INFO] - Original training samples: 170884
+2025-04-22 23:13:18,057 [INFO] - Resampled training samples after SMOTE: 341166
+2025-04-22 23:13:18,057 [INFO] - Starting Optuna hyperparameter tuning...
+2025-04-22 23:13:18,498 [INFO] - Trial 1 - Params: {'n_estimators': 212, 'max_depth': 10, 'learning_rate': 0.22227824312530747, 'subsample': 0.7993292420985183, 'colsample_bytree': 0.5780093202212182, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 23:13:56,254 [INFO] - Trial 1 - Accuracy: 0.9994, F1 Score: 0.9223
+2025-04-22 23:13:56,435 [INFO] - Trial 2 - Params: {'n_estimators': 146, 'max_depth': 3, 'learning_rate': 0.2611910822747312, 'subsample': 0.8005575058716043, 'colsample_bytree': 0.8540362888980227, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 23:14:14,922 [INFO] - Trial 2 - Accuracy: 0.9966, F1 Score: 0.7530
+2025-04-22 23:14:15,042 [INFO] - Trial 3 - Params: {'n_estimators': 106, 'max_depth': 10, 'learning_rate': 0.2514083658321223, 'subsample': 0.6061695553391381, 'colsample_bytree': 0.5909124836035503, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 23:14:30,285 [INFO] - Trial 3 - Accuracy: 0.9994, F1 Score: 0.9272
+2025-04-22 23:14:30,475 [INFO] - Trial 4 - Params: {'n_estimators': 155, 'max_depth': 5, 'learning_rate': 0.16217936517334897, 'subsample': 0.7159725093210578, 'colsample_bytree': 0.645614570099021, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 23:14:46,122 [INFO] - Trial 4 - Accuracy: 0.9986, F1 Score: 0.8542
+2025-04-22 23:14:46,293 [INFO] - Trial 5 - Params: {'n_estimators': 284, 'max_depth': 4, 'learning_rate': 0.09472194807521325, 'subsample': 0.6831809216468459, 'colsample_bytree': 0.728034992108518, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 23:15:06,069 [INFO] - Trial 5 - Accuracy: 0.9975, F1 Score: 0.7935
+2025-04-22 23:15:06,240 [INFO] - Trial 6 - Params: {'n_estimators': 336, 'max_depth': 4, 'learning_rate': 0.15912798713994736, 'subsample': 0.7962072844310213, 'colsample_bytree': 0.5232252063599989, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 23:15:28,907 [INFO] - Trial 6 - Accuracy: 0.9991, F1 Score: 0.8935
+2025-04-22 23:15:29,193 [INFO] - Trial 7 - Params: {'n_estimators': 282, 'max_depth': 4, 'learning_rate': 0.02886496196573106, 'subsample': 0.9744427686266666, 'colsample_bytree': 0.9828160165372797, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 23:15:50,598 [INFO] - Trial 7 - Accuracy: 0.9913, F1 Score: 0.6431
+2025-04-22 23:15:50,803 [INFO] - Trial 8 - Params: {'n_estimators': 343, 'max_depth': 5, 'learning_rate': 0.03832491306185132, 'subsample': 0.8421165132560784, 'colsample_bytree': 0.7200762468698007, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 23:16:13,554 [INFO] - Trial 8 - Accuracy: 0.9961, F1 Score: 0.7349
+2025-04-22 23:16:13,841 [INFO] - Trial 9 - Params: {'n_estimators': 136, 'max_depth': 6, 'learning_rate': 0.019972671123413333, 'subsample': 0.954660201039391, 'colsample_bytree': 0.6293899908000085, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 23:16:29,948 [INFO] - Trial 9 - Accuracy: 0.9939, F1 Score: 0.6803
+2025-04-22 23:16:30,120 [INFO] - Trial 10 - Params: {'n_estimators': 299, 'max_depth': 5, 'learning_rate': 0.16081972614156514, 'subsample': 0.7733551396716398, 'colsample_bytree': 0.5924272277627636, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 23:16:58,418 [INFO] - Trial 10 - Accuracy: 0.9993, F1 Score: 0.9186
+2025-04-22 23:16:58,729 [INFO] - Trial 11 - Params: {'n_estimators': 216, 'max_depth': 10, 'learning_rate': 0.29116576212848116, 'subsample': 0.5148027085118481, 'colsample_bytree': 0.8259332753890893, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 23:17:19,714 [INFO] - Trial 11 - Accuracy: 0.9994, F1 Score: 0.9272
+2025-04-22 23:17:19,813 [INFO] - Trial 12 - Params: {'n_estimators': 216, 'max_depth': 10, 'learning_rate': 0.2941449319059625, 'subsample': 0.5199086519616609, 'colsample_bytree': 0.8692027723625104, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 23:17:50,237 [INFO] - Trial 12 - Accuracy: 0.9994, F1 Score: 0.9284
+2025-04-22 23:17:50,357 [INFO] - Trial 13 - Params: {'n_estimators': 109, 'max_depth': 8, 'learning_rate': 0.2362035439435593, 'subsample': 0.5154216970334154, 'colsample_bytree': 0.9168026515544779, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 23:18:10,949 [INFO] - Trial 13 - Accuracy: 0.9995, F1 Score: 0.9347
+2025-04-22 23:18:11,096 [INFO] - Trial 14 - Params: {'n_estimators': 203, 'max_depth': 8, 'learning_rate': 0.21458458219165255, 'subsample': 0.5038813712256407, 'colsample_bytree': 0.9655133730133555, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 23:18:41,411 [INFO] - Trial 14 - Accuracy: 0.9993, F1 Score: 0.9186
+2025-04-22 23:18:41,578 [INFO] - Trial 15 - Params: {'n_estimators': 174, 'max_depth': 8, 'learning_rate': 0.29810510207916185, 'subsample': 0.5893048289960583, 'colsample_bytree': 0.8859620061900357, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 23:19:07,972 [INFO] - Trial 15 - Accuracy: 0.9994, F1 Score: 0.9259
+2025-04-22 23:19:08,152 [INFO] - Trial 16 - Params: {'n_estimators': 390, 'max_depth': 8, 'learning_rate': 0.20542060319274563, 'subsample': 0.5937663157166837, 'colsample_bytree': 0.9098051829114833, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 23:19:55,706 [INFO] - Trial 16 - Accuracy: 0.9993, F1 Score: 0.9186
+2025-04-22 23:19:55,924 [INFO] - Trial 17 - Params: {'n_estimators': 100, 'max_depth': 9, 'learning_rate': 0.25422843558413716, 'subsample': 0.6460870052114984, 'colsample_bytree': 0.7904906991719274, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 23:20:10,235 [INFO] - Trial 17 - Accuracy: 0.9993, F1 Score: 0.9151
+2025-04-22 23:20:10,418 [INFO] - Trial 18 - Params: {'n_estimators': 238, 'max_depth': 7, 'learning_rate': 0.09799942725768182, 'subsample': 0.5436707693070663, 'colsample_bytree': 0.9292375745198874, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 23:20:32,593 [INFO] - Trial 18 - Accuracy: 0.9993, F1 Score: 0.9151
+2025-04-22 23:20:32,808 [INFO] - Trial 19 - Params: {'n_estimators': 191, 'max_depth': 9, 'learning_rate': 0.19615749128633023, 'subsample': 0.8949828442656665, 'colsample_bytree': 0.7819725622864638, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 23:20:58,186 [INFO] - Trial 19 - Accuracy: 0.9995, F1 Score: 0.9347
+2025-04-22 23:20:58,297 [INFO] - Trial 20 - Params: {'n_estimators': 167, 'max_depth': 7, 'learning_rate': 0.1918270970482945, 'subsample': 0.9024747466287594, 'colsample_bytree': 0.8019879527253722, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 23:21:23,426 [INFO] - Trial 20 - Accuracy: 0.9994, F1 Score: 0.9259
+2025-04-22 23:21:23,485 [INFO] - Best trial: 12, Best accuracy: 0.9995
+2025-04-22 23:21:23,487 [INFO] - Training final model with best hyperparameters...
+2025-04-22 23:21:29,288 [INFO] - Saved best model to best_model/model.pkl
+2025-04-22 23:21:34,717 [INFO] - Final model logged and registered with MLflow.
+2025-04-22 23:42:47,070 [INFO] - Loading and preprocessing data...
+2025-04-22 23:42:48,340 [INFO] - Original training samples: 170884
+2025-04-22 23:42:54,754 [INFO] - Resampled training samples after SMOTE: 341166
+2025-04-22 23:42:54,754 [INFO] - Starting Optuna hyperparameter tuning...
+2025-04-22 23:42:54,789 [INFO] - Trial 1 - Params: {'n_estimators': 212, 'max_depth': 10, 'learning_rate': 0.22227824312530747, 'subsample': 0.7993292420985183, 'colsample_bytree': 0.5780093202212182, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 23:43:32,271 [INFO] - Trial 1 - Accuracy: 0.9994, F1 Score: 0.9223
+2025-04-22 23:43:32,311 [INFO] - Best trial: 0, Best accuracy: 0.9994
+2025-04-22 23:43:32,311 [INFO] - Training final model with best hyperparameters...
+2025-04-22 23:44:06,944 [INFO] - Saved best model to best_model/model.pkl
+2025-04-22 23:44:13,139 [INFO] - Final model logged and registered with MLflow.
+2025-04-22 23:49:33,296 [INFO] - Loading and preprocessing data...
+2025-04-22 23:49:34,332 [INFO] - Original training samples: 170884
+2025-04-22 23:49:39,948 [INFO] - Resampled training samples after SMOTE: 341166
+2025-04-22 23:49:39,964 [INFO] - Starting Optuna hyperparameter tuning...
+2025-04-22 23:49:39,979 [INFO] - Trial 1 - Params: {'n_estimators': 212, 'max_depth': 10, 'learning_rate': 0.22227824312530747, 'subsample': 0.7993292420985183, 'colsample_bytree': 0.5780093202212182, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 23:50:14,054 [INFO] - Trial 1 - Accuracy: 0.9994, F1 Score: 0.9223
+2025-04-22 23:50:14,165 [INFO] - Best trial: 0, Best accuracy: 0.9994
+2025-04-22 23:50:14,165 [INFO] - Training final model with best hyperparameters...
+2025-04-22 23:50:38,910 [INFO] - Saved best model to best_model/model.pkl
+2025-04-22 23:50:44,875 [INFO] - Final model logged and registered with MLflow.
+2025-04-22 23:54:31,045 [INFO] - Loading and preprocessing data...
+2025-04-22 23:54:32,664 [INFO] - Original training samples: 170884
+2025-04-22 23:54:42,633 [INFO] - Resampled training samples after SMOTE: 341166
+2025-04-22 23:54:42,633 [INFO] - Starting Optuna hyperparameter tuning...
+2025-04-22 23:54:42,717 [INFO] - Trial 1 - Params: {'n_estimators': 212, 'max_depth': 10, 'learning_rate': 0.22227824312530747, 'subsample': 0.7993292420985183, 'colsample_bytree': 0.5780093202212182, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 23:55:33,231 [INFO] - Trial 1 - Accuracy: 0.9994, F1 Score: 0.9309
+2025-04-22 23:55:33,433 [INFO] - Trial 2 - Params: {'n_estimators': 146, 'max_depth': 3, 'learning_rate': 0.2611910822747312, 'subsample': 0.8005575058716043, 'colsample_bytree': 0.8540362888980227, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 23:56:22,951 [INFO] - Trial 2 - Accuracy: 0.9965, F1 Score: 0.7529
+2025-04-22 23:56:23,147 [INFO] - Trial 3 - Params: {'n_estimators': 106, 'max_depth': 10, 'learning_rate': 0.2514083658321223, 'subsample': 0.6061695553391381, 'colsample_bytree': 0.5909124836035503, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 23:56:59,048 [INFO] - Trial 3 - Accuracy: 0.9993, F1 Score: 0.9186
+2025-04-22 23:56:59,200 [INFO] - Trial 4 - Params: {'n_estimators': 155, 'max_depth': 5, 'learning_rate': 0.16217936517334897, 'subsample': 0.7159725093210578, 'colsample_bytree': 0.645614570099021, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 23:57:37,117 [INFO] - Trial 4 - Accuracy: 0.9986, F1 Score: 0.8594
+2025-04-22 23:57:37,259 [INFO] - Trial 5 - Params: {'n_estimators': 284, 'max_depth': 4, 'learning_rate': 0.09472194807521325, 'subsample': 0.6831809216468459, 'colsample_bytree': 0.728034992108518, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-22 23:59:58,525 [INFO] - Loading and preprocessing data...
+2025-04-23 00:00:00,209 [INFO] - Original training samples: 170884
+2025-04-23 00:00:00,806 [INFO] - Resampled training samples after SMOTE: 341166
+2025-04-23 00:00:00,807 [INFO] - Starting Optuna hyperparameter tuning...
+2025-04-23 00:00:01,256 [INFO] - Trial 1 - Params: {'n_estimators': 212, 'max_depth': 10, 'learning_rate': 0.22227824312530747, 'subsample': 0.7993292420985183, 'colsample_bytree': 0.5780093202212182, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-23 00:00:52,800 [INFO] - Trial 1 - Accuracy: 0.9994, F1 Score: 0.9309
+2025-04-23 00:00:52,996 [INFO] - Trial 2 - Params: {'n_estimators': 146, 'max_depth': 3, 'learning_rate': 0.2611910822747312, 'subsample': 0.8005575058716043, 'colsample_bytree': 0.8540362888980227, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-23 00:01:22,518 [INFO] - Trial 2 - Accuracy: 0.9965, F1 Score: 0.7529
+2025-04-23 00:01:22,627 [INFO] - Best trial: 0, Best accuracy: 0.9994
+2025-04-23 00:01:22,627 [INFO] - Training final model with best hyperparameters...
+2025-04-23 00:03:53,645 [INFO] - Loading and preprocessing data...
+2025-04-23 00:03:56,724 [INFO] - Original training samples: 170884
+2025-04-23 00:03:57,787 [INFO] - Resampled training samples after SMOTE: 341166
+2025-04-23 00:03:57,788 [INFO] - Starting Optuna hyperparameter tuning...
+2025-04-23 00:03:58,650 [INFO] - Trial 1 - Params: {'n_estimators': 250, 'max_depth': 10, 'learning_rate': 0.22227824312530747, 'subsample': 0.7993292420985183, 'colsample_bytree': 0.5780093202212182, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-23 00:04:57,060 [INFO] - Trial 1 - Accuracy: 0.9995, F1 Score: 0.9347
+2025-04-23 00:04:57,274 [INFO] - Trial 2 - Params: {'n_estimators': 162, 'max_depth': 3, 'learning_rate': 0.2611910822747312, 'subsample': 0.8005575058716043, 'colsample_bytree': 0.8540362888980227, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-23 00:05:33,024 [INFO] - Trial 2 - Accuracy: 0.9972, F1 Score: 0.7811
+2025-04-23 00:05:33,181 [INFO] - Trial 3 - Params: {'n_estimators': 108, 'max_depth': 10, 'learning_rate': 0.2514083658321223, 'subsample': 0.6061695553391381, 'colsample_bytree': 0.5909124836035503, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-23 00:06:02,492 [INFO] - Trial 3 - Accuracy: 0.9994, F1 Score: 0.9223
+2025-04-23 00:06:02,736 [INFO] - Trial 4 - Params: {'n_estimators': 173, 'max_depth': 5, 'learning_rate': 0.16217936517334897, 'subsample': 0.7159725093210578, 'colsample_bytree': 0.645614570099021, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-23 00:06:54,406 [INFO] - Trial 4 - Accuracy: 0.9987, F1 Score: 0.8673
+2025-04-23 00:06:54,613 [INFO] - Trial 5 - Params: {'n_estimators': 345, 'max_depth': 4, 'learning_rate': 0.09472194807521325, 'subsample': 0.6831809216468459, 'colsample_bytree': 0.728034992108518, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-23 00:07:45,852 [INFO] - Trial 5 - Accuracy: 0.9983, F1 Score: 0.8374
+2025-04-23 00:07:46,012 [INFO] - Trial 6 - Params: {'n_estimators': 414, 'max_depth': 4, 'learning_rate': 0.15912798713994736, 'subsample': 0.7962072844310213, 'colsample_bytree': 0.5232252063599989, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-23 00:08:52,240 [INFO] - Trial 6 - Accuracy: 0.9992, F1 Score: 0.9081
+2025-04-23 00:08:52,771 [INFO] - Trial 7 - Params: {'n_estimators': 343, 'max_depth': 4, 'learning_rate': 0.02886496196573106, 'subsample': 0.9744427686266666, 'colsample_bytree': 0.9828160165372797, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-23 00:09:39,244 [INFO] - Trial 7 - Accuracy: 0.9924, F1 Score: 0.6558
+2025-04-23 00:09:39,416 [INFO] - Trial 8 - Params: {'n_estimators': 424, 'max_depth': 5, 'learning_rate': 0.03832491306185132, 'subsample': 0.8421165132560784, 'colsample_bytree': 0.7200762468698007, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-23 00:10:37,712 [INFO] - Trial 8 - Accuracy: 0.9973, F1 Score: 0.7802
+2025-04-23 00:10:37,910 [INFO] - Trial 9 - Params: {'n_estimators': 148, 'max_depth': 6, 'learning_rate': 0.019972671123413333, 'subsample': 0.954660201039391, 'colsample_bytree': 0.6293899908000085, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-23 00:10:58,362 [INFO] - Trial 9 - Accuracy: 0.9940, F1 Score: 0.6823
+2025-04-23 00:10:58,591 [INFO] - Trial 10 - Params: {'n_estimators': 365, 'max_depth': 5, 'learning_rate': 0.16081972614156514, 'subsample': 0.7733551396716398, 'colsample_bytree': 0.5924272277627636, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-23 00:11:34,370 [INFO] - Trial 10 - Accuracy: 0.9994, F1 Score: 0.9309
+2025-04-23 00:11:34,598 [INFO] - Trial 11 - Params: {'n_estimators': 250, 'max_depth': 10, 'learning_rate': 0.21187416297391315, 'subsample': 0.5089809378074099, 'colsample_bytree': 0.5076838686640521, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-23 00:12:22,921 [INFO] - Trial 11 - Accuracy: 0.9994, F1 Score: 0.9259
+2025-04-23 00:12:23,198 [INFO] - Trial 12 - Params: {'n_estimators': 260, 'max_depth': 7, 'learning_rate': 0.1953985096626273, 'subsample': 0.8730087382509263, 'colsample_bytree': 0.8218563683119118, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-23 00:13:03,336 [INFO] - Trial 12 - Accuracy: 0.9995, F1 Score: 0.9335
+2025-04-23 00:13:03,559 [INFO] - Trial 13 - Params: {'n_estimators': 258, 'max_depth': 8, 'learning_rate': 0.2070229018071411, 'subsample': 0.8676850494543448, 'colsample_bytree': 0.8339538705408652, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-23 00:13:49,916 [INFO] - Trial 13 - Accuracy: 0.9994, F1 Score: 0.9309
+2025-04-23 00:13:50,172 [INFO] - Trial 14 - Params: {'n_estimators': 230, 'max_depth': 8, 'learning_rate': 0.29854124312769814, 'subsample': 0.8936108460389665, 'colsample_bytree': 0.832590151986706, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-23 00:14:35,003 [INFO] - Trial 14 - Accuracy: 0.9995, F1 Score: 0.9347
+2025-04-23 00:14:35,219 [INFO] - Trial 15 - Params: {'n_estimators': 287, 'max_depth': 8, 'learning_rate': 0.2071725356534493, 'subsample': 0.9085121811914738, 'colsample_bytree': 0.9322674653704851, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-23 00:15:17,841 [INFO] - Trial 15 - Accuracy: 0.9995, F1 Score: 0.9347
+2025-04-23 00:15:18,035 [INFO] - Trial 16 - Params: {'n_estimators': 487, 'max_depth': 9, 'learning_rate': 0.10941179359723174, 'subsample': 0.6274745095999714, 'colsample_bytree': 0.7574852070104716, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-23 00:16:19,607 [INFO] - Trial 16 - Accuracy: 0.9995, F1 Score: 0.9347
+2025-04-23 00:16:19,858 [INFO] - Trial 17 - Params: {'n_estimators': 224, 'max_depth': 7, 'learning_rate': 0.24628727851142038, 'subsample': 0.835289910891483, 'colsample_bytree': 0.7820004928858691, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-23 00:16:47,349 [INFO] - Trial 17 - Accuracy: 0.9994, F1 Score: 0.9297
+2025-04-23 00:16:47,597 [INFO] - Trial 18 - Params: {'n_estimators': 300, 'max_depth': 7, 'learning_rate': 0.11639441898442458, 'subsample': 0.731057379200564, 'colsample_bytree': 0.680371010605396, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-23 00:17:31,669 [INFO] - Trial 18 - Accuracy: 0.9994, F1 Score: 0.9223
+2025-04-23 00:17:31,957 [INFO] - Trial 19 - Params: {'n_estimators': 196, 'max_depth': 9, 'learning_rate': 0.19638538483791407, 'subsample': 0.9281326369763927, 'colsample_bytree': 0.9088845331876061, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-23 00:18:01,118 [INFO] - Trial 19 - Accuracy: 0.9994, F1 Score: 0.9297
+2025-04-23 00:18:01,409 [INFO] - Trial 20 - Params: {'n_estimators': 303, 'max_depth': 9, 'learning_rate': 0.2910882570941282, 'subsample': 0.669371283171418, 'colsample_bytree': 0.7962849020729987, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-23 00:18:35,660 [INFO] - Trial 20 - Accuracy: 0.9995, F1 Score: 0.9374
+2025-04-23 00:18:35,825 [INFO] - Best trial: 19, Best accuracy: 0.9995
+2025-04-23 00:18:35,830 [INFO] - Training final model with best hyperparameters...
+2025-04-23 00:18:56,964 [INFO] - Saved best model to best_model/model.pkl
+2025-04-23 00:19:04,117 [INFO] - Final model logged and registered with MLflow.
+2025-04-26 20:24:37,492 [INFO] - Loading and preprocessing data...
+2025-04-26 20:25:22,619 [INFO] - Loading and preprocessing data...
+2025-04-26 20:25:23,483 [INFO] - Original training samples: 170884
+2025-04-26 20:25:23,807 [INFO] - Resampled training samples after SMOTE: 341166
+2025-04-26 20:25:23,807 [INFO] - Starting Optuna hyperparameter tuning
+2025-04-26 20:25:24,179 [INFO] - Trial 1 - Params: {'n_estimators': 250, 'max_depth': 10, 'learning_rate': 0.22227824312530747, 'subsample': 0.7993292420985183, 'colsample_bytree': 0.5780093202212182, 'scale_pos_weight': 2.403950683025824, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:25:45,577 [INFO] - Trial 1 - Accuracy: 0.9984, Recall: 0.8793, F1 Score: 0.6892
+2025-04-26 20:25:45,751 [INFO] - Trial 2 - Params: {'n_estimators': 123, 'max_depth': 9, 'learning_rate': 0.18432335340553055, 'subsample': 0.8540362888980227, 'colsample_bytree': 0.5102922471479012, 'scale_pos_weight': 9.72918866945795, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:26:31,511 [INFO] - Loading and preprocessing data...
+2025-04-26 20:26:32,260 [INFO] - Original training samples: 170884
+2025-04-26 20:26:32,528 [INFO] - Resampled training samples after SMOTE: 341166
+2025-04-26 20:26:32,543 [INFO] - Starting Optuna hyperparameter tuning
+2025-04-26 20:26:32,799 [INFO] - Trial 1 - Params: {'n_estimators': 250, 'max_depth': 10, 'learning_rate': 0.22227824312530747, 'subsample': 0.7993292420985183, 'colsample_bytree': 0.5780093202212182, 'scale_pos_weight': 2.403950683025824, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:26:44,560 [INFO] - Trial 1 - Accuracy: 0.9984, Recall: 0.8793, F1 Score: 0.6892
+2025-04-26 20:26:44,706 [INFO] - Trial 2 - Params: {'n_estimators': 123, 'max_depth': 9, 'learning_rate': 0.18432335340553055, 'subsample': 0.8540362888980227, 'colsample_bytree': 0.5102922471479012, 'scale_pos_weight': 9.72918866945795, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:26:53,456 [INFO] - Trial 2 - Accuracy: 0.9961, Recall: 0.8793, F1 Score: 0.4811
+2025-04-26 20:26:53,574 [INFO] - Trial 3 - Params: {'n_estimators': 433, 'max_depth': 4, 'learning_rate': 0.06272924049005918, 'subsample': 0.5917022549267169, 'colsample_bytree': 0.6521211214797689, 'scale_pos_weight': 5.72280788469014, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:27:05,933 [INFO] - Trial 3 - Accuracy: 0.9364, Recall: 0.9138, F1 Score: 0.0553
+2025-04-26 20:27:06,176 [INFO] - Trial 4 - Params: {'n_estimators': 273, 'max_depth': 5, 'learning_rate': 0.18743733946949004, 'subsample': 0.569746930326021, 'colsample_bytree': 0.6460723242676091, 'scale_pos_weight': 4.297256589643226, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:27:22,600 [INFO] - Trial 4 - Accuracy: 0.9953, Recall: 0.8966, F1 Score: 0.4388
+2025-04-26 20:27:22,741 [INFO] - Trial 5 - Params: {'n_estimators': 282, 'max_depth': 9, 'learning_rate': 0.06790539682592432, 'subsample': 0.7571172192068059, 'colsample_bytree': 0.7962072844310213, 'scale_pos_weight': 1.4180537144799796, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:27:50,736 [INFO] - Trial 5 - Accuracy: 0.9961, Recall: 0.8793, F1 Score: 0.4811
+2025-04-26 20:27:50,902 [INFO] - Trial 6 - Params: {'n_estimators': 343, 'max_depth': 4, 'learning_rate': 0.02886496196573106, 'subsample': 0.9744427686266666, 'colsample_bytree': 0.9828160165372797, 'scale_pos_weight': 8.275576133048151, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:28:23,182 [INFO] - Trial 6 - Accuracy: 0.5251, Recall: 1.0000, F1 Score: 0.0085
+2025-04-26 20:28:23,402 [INFO] - Trial 7 - Params: {'n_estimators': 222, 'max_depth': 3, 'learning_rate': 0.2084275776885255, 'subsample': 0.7200762468698007, 'colsample_bytree': 0.5610191174223894, 'scale_pos_weight': 5.456592191001432, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:28:40,706 [INFO] - Trial 7 - Accuracy: 0.9389, Recall: 0.8966, F1 Score: 0.0564
+2025-04-26 20:28:40,957 [INFO] - Trial 8 - Params: {'n_estimators': 113, 'max_depth': 10, 'learning_rate': 0.0850461946640049, 'subsample': 0.831261142176991, 'colsample_bytree': 0.6558555380447055, 'scale_pos_weight': 5.680612190600297, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:28:56,189 [INFO] - Trial 8 - Accuracy: 0.9845, Recall: 0.9138, F1 Score: 0.1934
+2025-04-26 20:28:56,474 [INFO] - Trial 9 - Params: {'n_estimators': 319, 'max_depth': 4, 'learning_rate': 0.291179542051722, 'subsample': 0.8875664116805573, 'colsample_bytree': 0.9697494707820946, 'scale_pos_weight': 9.053446153848839, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:29:19,402 [INFO] - Trial 9 - Accuracy: 0.9970, Recall: 0.8966, F1 Score: 0.5474
+2025-04-26 20:29:19,669 [INFO] - Trial 10 - Params: {'n_estimators': 339, 'max_depth': 10, 'learning_rate': 0.03566282559505665, 'subsample': 0.5979914312095727, 'colsample_bytree': 0.522613644455269, 'scale_pos_weight': 3.927972976869379, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:29:53,695 [INFO] - Trial 10 - Accuracy: 0.9894, Recall: 0.9138, F1 Score: 0.2592
+2025-04-26 20:29:53,977 [INFO] - Trial 11 - Params: {'n_estimators': 478, 'max_depth': 7, 'learning_rate': 0.27541959213068223, 'subsample': 0.6897100010581731, 'colsample_bytree': 0.8200442512337782, 'scale_pos_weight': 1.3485267996506467, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:30:34,865 [INFO] - Trial 11 - Accuracy: 0.9981, Recall: 0.8793, F1 Score: 0.6581
+2025-04-26 20:30:35,063 [INFO] - Trial 12 - Params: {'n_estimators': 492, 'max_depth': 7, 'learning_rate': 0.2753516099926944, 'subsample': 0.6898021217101118, 'colsample_bytree': 0.8362897495566306, 'scale_pos_weight': 1.0830463581557164, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:31:16,901 [INFO] - Trial 12 - Accuracy: 0.9983, Recall: 0.8966, F1 Score: 0.6887
+2025-04-26 20:31:17,256 [INFO] - Trial 13 - Params: {'n_estimators': 186, 'max_depth': 7, 'learning_rate': 0.2425683437575703, 'subsample': 0.6636600509103145, 'colsample_bytree': 0.8903522533101031, 'scale_pos_weight': 2.6374874490106723, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:31:35,520 [INFO] - Trial 13 - Accuracy: 0.9973, Recall: 0.8793, F1 Score: 0.5730
+2025-04-26 20:31:35,836 [INFO] - Trial 14 - Params: {'n_estimators': 399, 'max_depth': 8, 'learning_rate': 0.13668544982429182, 'subsample': 0.7945770711188213, 'colsample_bytree': 0.7343526094439212, 'scale_pos_weight': 2.5314253679618686, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:32:11,422 [INFO] - Trial 14 - Accuracy: 0.9977, Recall: 0.8966, F1 Score: 0.6154
+2025-04-26 20:32:11,677 [INFO] - Trial 15 - Params: {'n_estimators': 494, 'max_depth': 6, 'learning_rate': 0.24060814829214336, 'subsample': 0.9148509985104304, 'colsample_bytree': 0.7387755591366307, 'scale_pos_weight': 1.028316461317938, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:32:45,161 [INFO] - Trial 15 - Accuracy: 0.9980, Recall: 0.8793, F1 Score: 0.6415
+2025-04-26 20:32:45,507 [INFO] - Trial 16 - Params: {'n_estimators': 233, 'max_depth': 8, 'learning_rate': 0.24687471495921567, 'subsample': 0.6383847020513723, 'colsample_bytree': 0.8989974345395086, 'scale_pos_weight': 3.015763533142166, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:34:16,533 [INFO] - Loading and preprocessing data...
+2025-04-26 20:34:17,581 [INFO] - Original training samples: 170884
+2025-04-26 20:34:17,864 [INFO] - Resampled training samples after SMOTE: 221757
+2025-04-26 20:34:17,864 [INFO] - Starting Optuna hyperparameter tuning
+2025-04-26 20:34:18,172 [INFO] - Trial 1 - Params: {'n_estimators': 250, 'max_depth': 10, 'learning_rate': 0.22227824312530747, 'subsample': 0.7993292420985183, 'colsample_bytree': 0.5780093202212182, 'scale_pos_weight': 1.3119890406724053, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:34:32,866 [INFO] - Trial 1 - Accuracy: 0.9982, Recall: 0.8793, F1 Score: 0.6667
+2025-04-26 20:34:33,036 [INFO] - Trial 2 - Params: {'n_estimators': 447, 'max_depth': 7, 'learning_rate': 0.21534104756085318, 'subsample': 0.5102922471479012, 'colsample_bytree': 0.9849549260809971, 'scale_pos_weight': 2.6648852816008435, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:35:03,072 [INFO] - Trial 2 - Accuracy: 0.9981, Recall: 0.8793, F1 Score: 0.6538
+2025-04-26 20:35:03,291 [INFO] - Trial 3 - Params: {'n_estimators': 172, 'max_depth': 4, 'learning_rate': 0.09823025045826593, 'subsample': 0.762378215816119, 'colsample_bytree': 0.7159725093210578, 'scale_pos_weight': 1.5824582803960838, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:35:14,830 [INFO] - Trial 3 - Accuracy: 0.9627, Recall: 0.9138, F1 Score: 0.0908
+2025-04-26 20:35:15,096 [INFO] - Trial 4 - Params: {'n_estimators': 155, 'max_depth': 5, 'learning_rate': 0.11624493455517058, 'subsample': 0.728034992108518, 'colsample_bytree': 0.8925879806965068, 'scale_pos_weight': 1.3993475643167195, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:35:27,663 [INFO] - Trial 4 - Accuracy: 0.9862, Recall: 0.9138, F1 Score: 0.2120
+2025-04-26 20:35:27,794 [INFO] - Trial 5 - Params: {'n_estimators': 337, 'max_depth': 3, 'learning_rate': 0.1861880070514171, 'subsample': 0.5852620618436457, 'colsample_bytree': 0.5325257964926398, 'scale_pos_weight': 2.8977710745066663, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:35:50,486 [INFO] - Trial 5 - Accuracy: 0.9928, Recall: 0.8966, F1 Score: 0.3377
+2025-04-26 20:35:50,627 [INFO] - Trial 6 - Params: {'n_estimators': 424, 'max_depth': 5, 'learning_rate': 0.03832491306185132, 'subsample': 0.8421165132560784, 'colsample_bytree': 0.7200762468698007, 'scale_pos_weight': 1.2440764696895577, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:36:17,107 [INFO] - Trial 6 - Accuracy: 0.9823, Recall: 0.8966, F1 Score: 0.1708
+2025-04-26 20:36:17,241 [INFO] - Trial 7 - Params: {'n_estimators': 113, 'max_depth': 10, 'learning_rate': 0.0850461946640049, 'subsample': 0.831261142176991, 'colsample_bytree': 0.6558555380447055, 'scale_pos_weight': 2.0401360423556216, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:36:31,845 [INFO] - Trial 7 - Accuracy: 0.9966, Recall: 0.8793, F1 Score: 0.5152
+2025-04-26 20:36:32,014 [INFO] - Trial 8 - Params: {'n_estimators': 174, 'max_depth': 10, 'learning_rate': 0.2347885187747232, 'subsample': 0.9697494707820946, 'colsample_bytree': 0.9474136752138245, 'scale_pos_weight': 2.19579995762217, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:36:50,617 [INFO] - Trial 8 - Accuracy: 0.9991, Recall: 0.8793, F1 Score: 0.7907
+2025-04-26 20:36:50,754 [INFO] - Trial 9 - Params: {'n_estimators': 135, 'max_depth': 4, 'learning_rate': 0.023115913784056037, 'subsample': 0.6626651653816322, 'colsample_bytree': 0.6943386448447411, 'scale_pos_weight': 1.5426980635477918, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:37:05,616 [INFO] - Trial 9 - Accuracy: 0.7673, Recall: 0.9828, F1 Score: 0.0169
+2025-04-26 20:37:05,819 [INFO] - Trial 10 - Params: {'n_estimators': 243, 'max_depth': 5, 'learning_rate': 0.16738186411589207, 'subsample': 0.5704621124873813, 'colsample_bytree': 0.9010984903770198, 'scale_pos_weight': 1.1491012873595416, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:37:23,474 [INFO] - Trial 10 - Accuracy: 0.9984, Recall: 0.8793, F1 Score: 0.6939
+2025-04-26 20:37:23,613 [INFO] - Trial 11 - Params: {'n_estimators': 305, 'max_depth': 8, 'learning_rate': 0.29116576212848116, 'subsample': 0.9775699684882245, 'colsample_bytree': 0.8259332753890893, 'scale_pos_weight': 2.1504161336305456, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:37:43,641 [INFO] - Trial 11 - Accuracy: 0.9991, Recall: 0.8793, F1 Score: 0.8031
+2025-04-26 20:37:43,998 [INFO] - Trial 12 - Params: {'n_estimators': 350, 'max_depth': 8, 'learning_rate': 0.2992939973042041, 'subsample': 0.9976897653993266, 'colsample_bytree': 0.8395855451458043, 'scale_pos_weight': 2.149037764493188, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:38:07,051 [INFO] - Trial 12 - Accuracy: 0.9991, Recall: 0.8621, F1 Score: 0.7874
+2025-04-26 20:38:07,363 [INFO] - Trial 13 - Params: {'n_estimators': 242, 'max_depth': 8, 'learning_rate': 0.2984797247186391, 'subsample': 0.9994317875019886, 'colsample_bytree': 0.8101300233500726, 'scale_pos_weight': 2.328217844509684, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:38:25,086 [INFO] - Trial 13 - Accuracy: 0.9989, Recall: 0.8793, F1 Score: 0.7669
+2025-04-26 20:38:25,411 [INFO] - Trial 14 - Params: {'n_estimators': 311, 'max_depth': 9, 'learning_rate': 0.25825837614684727, 'subsample': 0.9234651056066276, 'colsample_bytree': 0.9886397161046538, 'scale_pos_weight': 2.3951264028962087, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:39:00,959 [INFO] - Trial 14 - Accuracy: 0.9988, Recall: 0.8793, F1 Score: 0.7445
+2025-04-26 20:39:01,156 [INFO] - Trial 15 - Params: {'n_estimators': 375, 'max_depth': 9, 'learning_rate': 0.2448901770319975, 'subsample': 0.9148796656248863, 'colsample_bytree': 0.7998252451906943, 'scale_pos_weight': 1.7692660417680957, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:39:31,935 [INFO] - Trial 15 - Accuracy: 0.9992, Recall: 0.8793, F1 Score: 0.8160
+2025-04-26 20:39:32,549 [INFO] - Trial 16 - Params: {'n_estimators': 394, 'max_depth': 7, 'learning_rate': 0.26178428166155443, 'subsample': 0.8981085918057989, 'colsample_bytree': 0.7989009093128052, 'scale_pos_weight': 1.8268281993854258, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:39:57,238 [INFO] - Trial 16 - Accuracy: 0.9990, Recall: 0.8793, F1 Score: 0.7846
+2025-04-26 20:39:57,439 [INFO] - Trial 17 - Params: {'n_estimators': 477, 'max_depth': 8, 'learning_rate': 0.26738456969242774, 'subsample': 0.8983023443198765, 'colsample_bytree': 0.7897830247330324, 'scale_pos_weight': 1.8186208702343156, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:40:21,821 [INFO] - Trial 17 - Accuracy: 0.9991, Recall: 0.8793, F1 Score: 0.8031
+2025-04-26 20:40:22,092 [INFO] - Trial 18 - Params: {'n_estimators': 381, 'max_depth': 9, 'learning_rate': 0.1938175812068555, 'subsample': 0.9295686450384524, 'colsample_bytree': 0.8668101569336214, 'scale_pos_weight': 2.583449319610619, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:40:48,280 [INFO] - Trial 18 - Accuracy: 0.9988, Recall: 0.8793, F1 Score: 0.7556
+2025-04-26 20:40:48,371 [INFO] - Trial 19 - Params: {'n_estimators': 284, 'max_depth': 9, 'learning_rate': 0.14856946461128306, 'subsample': 0.8539803137456374, 'colsample_bytree': 0.6548503898583582, 'scale_pos_weight': 1.7775383895727725, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:41:12,545 [INFO] - Trial 19 - Accuracy: 0.9991, Recall: 0.8621, F1 Score: 0.7874
+2025-04-26 20:41:12,749 [INFO] - Trial 20 - Params: {'n_estimators': 368, 'max_depth': 6, 'learning_rate': 0.28022687784263023, 'subsample': 0.7184688103571022, 'colsample_bytree': 0.7601438948261643, 'scale_pos_weight': 1.946667990237653, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:41:41,208 [INFO] - Trial 20 - Accuracy: 0.9989, Recall: 0.8793, F1 Score: 0.7727
+2025-04-26 20:41:41,271 [INFO] - Best trial: 14, Best F1 score: 0.8160
+2025-04-26 20:41:41,271 [INFO] - Training final model with best hyperparameters...
+2025-04-26 20:42:07,161 [INFO] - Saved best model to best_model/model.pkl
+2025-04-26 20:42:19,860 [INFO] - Final model logged and registered with MLflow.
+2025-04-26 20:48:22,126 [INFO] - Loading and preprocessing data...
+2025-04-26 20:48:22,942 [INFO] - Original training samples: 170884
+2025-04-26 20:48:23,266 [INFO] - Resampled training samples after SMOTE: 221757
+2025-04-26 20:48:23,266 [INFO] - Starting Optuna hyperparameter tuning
+2025-04-26 20:48:23,574 [INFO] - Trial 1 - Params: {'n_estimators': 250, 'max_depth': 10, 'learning_rate': 0.22227824312530747, 'subsample': 0.7993292420985183, 'colsample_bytree': 0.5780093202212182, 'scale_pos_weight': 1.6239780813448106, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:48:42,496 [INFO] - Trial 1 - Accuracy: 0.9982, Recall: 0.8793, F1 Score: 0.6667
+2025-04-26 20:48:42,631 [INFO] - Trial 2 - Params: {'n_estimators': 447, 'max_depth': 7, 'learning_rate': 0.21534104756085318, 'subsample': 0.5102922471479012, 'colsample_bytree': 0.9849549260809971, 'scale_pos_weight': 4.329770563201687, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:49:14,404 [INFO] - Trial 2 - Accuracy: 0.9982, Recall: 0.8966, F1 Score: 0.6753
+2025-04-26 20:49:14,528 [INFO] - Trial 3 - Params: {'n_estimators': 172, 'max_depth': 4, 'learning_rate': 0.09823025045826593, 'subsample': 0.762378215816119, 'colsample_bytree': 0.7159725093210578, 'scale_pos_weight': 2.1649165607921677, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:49:30,572 [INFO] - Trial 3 - Accuracy: 0.9594, Recall: 0.8966, F1 Score: 0.0826
+2025-04-26 20:49:30,680 [INFO] - Trial 4 - Params: {'n_estimators': 155, 'max_depth': 5, 'learning_rate': 0.11624493455517058, 'subsample': 0.728034992108518, 'colsample_bytree': 0.8925879806965068, 'scale_pos_weight': 1.798695128633439, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:49:43,282 [INFO] - Trial 4 - Accuracy: 0.9850, Recall: 0.9138, F1 Score: 0.1992
+2025-04-26 20:49:43,428 [INFO] - Trial 5 - Params: {'n_estimators': 337, 'max_depth': 3, 'learning_rate': 0.1861880070514171, 'subsample': 0.5852620618436457, 'colsample_bytree': 0.5325257964926398, 'scale_pos_weight': 4.7955421490133325, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:50:09,469 [INFO] - Trial 5 - Accuracy: 0.9915, Recall: 0.8966, F1 Score: 0.2997
+2025-04-26 20:50:09,766 [INFO] - Trial 6 - Params: {'n_estimators': 424, 'max_depth': 5, 'learning_rate': 0.03832491306185132, 'subsample': 0.8421165132560784, 'colsample_bytree': 0.7200762468698007, 'scale_pos_weight': 1.4881529393791153, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:50:36,323 [INFO] - Trial 6 - Accuracy: 0.9797, Recall: 0.8966, F1 Score: 0.1527
+2025-04-26 20:50:36,542 [INFO] - Trial 7 - Params: {'n_estimators': 113, 'max_depth': 10, 'learning_rate': 0.0850461946640049, 'subsample': 0.831261142176991, 'colsample_bytree': 0.6558555380447055, 'scale_pos_weight': 3.0802720847112433, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:50:50,114 [INFO] - Trial 7 - Accuracy: 0.9958, Recall: 0.8966, F1 Score: 0.4622
+2025-04-26 20:50:50,333 [INFO] - Trial 8 - Params: {'n_estimators': 174, 'max_depth': 10, 'learning_rate': 0.2347885187747232, 'subsample': 0.9697494707820946, 'colsample_bytree': 0.9474136752138245, 'scale_pos_weight': 3.3915999152443406, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:51:04,392 [INFO] - Trial 8 - Accuracy: 0.9990, Recall: 0.8793, F1 Score: 0.7786
+2025-04-26 20:51:04,595 [INFO] - Trial 9 - Params: {'n_estimators': 135, 'max_depth': 4, 'learning_rate': 0.023115913784056037, 'subsample': 0.6626651653816322, 'colsample_bytree': 0.6943386448447411, 'scale_pos_weight': 2.0853961270955836, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:51:14,944 [INFO] - Trial 9 - Accuracy: 0.6767, Recall: 0.9828, F1 Score: 0.0122
+2025-04-26 20:51:15,131 [INFO] - Trial 10 - Params: {'n_estimators': 243, 'max_depth': 5, 'learning_rate': 0.16738186411589207, 'subsample': 0.5704621124873813, 'colsample_bytree': 0.9010984903770198, 'scale_pos_weight': 1.2982025747190833, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:51:30,295 [INFO] - Trial 10 - Accuracy: 0.9983, Recall: 0.8793, F1 Score: 0.6755
+2025-04-26 20:51:30,545 [INFO] - Trial 11 - Params: {'n_estimators': 305, 'max_depth': 8, 'learning_rate': 0.29116576212848116, 'subsample': 0.9775699684882245, 'colsample_bytree': 0.8259332753890893, 'scale_pos_weight': 3.3008322672610912, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:51:50,118 [INFO] - Trial 11 - Accuracy: 0.9991, Recall: 0.8793, F1 Score: 0.7969
+2025-04-26 20:51:50,322 [INFO] - Trial 12 - Params: {'n_estimators': 350, 'max_depth': 8, 'learning_rate': 0.2992939973042041, 'subsample': 0.9976897653993266, 'colsample_bytree': 0.8395855451458043, 'scale_pos_weight': 3.298075528986377, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:52:17,526 [INFO] - Trial 12 - Accuracy: 0.9990, Recall: 0.8793, F1 Score: 0.7846
+2025-04-26 20:52:17,660 [INFO] - Trial 13 - Params: {'n_estimators': 361, 'max_depth': 8, 'learning_rate': 0.2986119590820304, 'subsample': 0.999503051767001, 'colsample_bytree': 0.8376071489180336, 'scale_pos_weight': 3.848058037788908, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:52:51,521 [INFO] - Trial 13 - Accuracy: 0.9991, Recall: 0.8621, F1 Score: 0.7874
+2025-04-26 20:52:51,677 [INFO] - Trial 14 - Params: {'n_estimators': 376, 'max_depth': 8, 'learning_rate': 0.28771734063946625, 'subsample': 0.9310671493509981, 'colsample_bytree': 0.7843325811058024, 'scale_pos_weight': 3.8423811473064378, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:53:20,455 [INFO] - Trial 14 - Accuracy: 0.9991, Recall: 0.8793, F1 Score: 0.7907
+2025-04-26 20:53:20,707 [INFO] - Trial 15 - Params: {'n_estimators': 488, 'max_depth': 8, 'learning_rate': 0.2604821315625141, 'subsample': 0.9159469022942255, 'colsample_bytree': 0.7954038992607805, 'scale_pos_weight': 2.4610445166646926, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:54:00,103 [INFO] - Trial 15 - Accuracy: 0.9988, Recall: 0.8793, F1 Score: 0.7445
+2025-04-26 20:54:00,298 [INFO] - Trial 16 - Params: {'n_estimators': 285, 'max_depth': 7, 'learning_rate': 0.26178428166155443, 'subsample': 0.9040330172235821, 'colsample_bytree': 0.7956056565056058, 'scale_pos_weight': 3.9056860292350777, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:54:27,410 [INFO] - Trial 16 - Accuracy: 0.9991, Recall: 0.8621, F1 Score: 0.7937
+2025-04-26 20:54:27,599 [INFO] - Trial 17 - Params: {'n_estimators': 278, 'max_depth': 7, 'learning_rate': 0.24793695342414068, 'subsample': 0.8953696275354445, 'colsample_bytree': 0.6343717082730564, 'scale_pos_weight': 2.7414382807245006, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:54:55,619 [INFO] - Trial 17 - Accuracy: 0.9988, Recall: 0.8793, F1 Score: 0.7500
+2025-04-26 20:54:55,805 [INFO] - Trial 18 - Params: {'n_estimators': 307, 'max_depth': 6, 'learning_rate': 0.19074410188574276, 'subsample': 0.8805304594988683, 'colsample_bytree': 0.7740028134196276, 'scale_pos_weight': 3.823755209455301, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:55:24,308 [INFO] - Trial 18 - Accuracy: 0.9990, Recall: 0.8793, F1 Score: 0.7786
+2025-04-26 20:55:24,550 [INFO] - Trial 19 - Params: {'n_estimators': 224, 'max_depth': 9, 'learning_rate': 0.26582707839675684, 'subsample': 0.9438872354180714, 'colsample_bytree': 0.8609727402803516, 'scale_pos_weight': 4.815487805767448, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:55:48,961 [INFO] - Trial 19 - Accuracy: 0.9989, Recall: 0.8793, F1 Score: 0.7612
+2025-04-26 20:55:49,187 [INFO] - Trial 20 - Params: {'n_estimators': 210, 'max_depth': 6, 'learning_rate': 0.13899904823480025, 'subsample': 0.8680995951600531, 'colsample_bytree': 0.9310637758147824, 'scale_pos_weight': 4.222471260961448, 'random_state': 42, 'use_label_encoder': False, 'eval_metric': 'logloss'}
+2025-04-26 20:56:11,164 [INFO] - Trial 20 - Accuracy: 0.9978, Recall: 0.8793, F1 Score: 0.6145
+2025-04-26 20:56:11,198 [INFO] - Best trial: 10, Best F1 score: 0.7969
+2025-04-26 20:56:11,198 [INFO] - Training final model with best hyperparameters...
+2025-04-26 20:56:27,263 [INFO] - Best threshold : 0.03786651028431545
+2025-04-26 20:56:27,279 [INFO] - Saved best model to best_model/model.pkl
+2025-04-26 20:56:32,451 [INFO] - Final model logged and registered with MLflow.

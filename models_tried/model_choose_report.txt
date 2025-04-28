@@ -1,0 +1,53 @@
+
+=== lightgbm_model ===
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00     28422
+           1       0.58      0.78      0.66        58
+
+    accuracy                           1.00     28480
+   macro avg       0.79      0.89      0.83     28480
+weighted avg       1.00      1.00      1.00     28480
+
+========================================
+
+
+=== rf_model ===
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00     28422
+           1       0.86      0.83      0.84        58
+
+    accuracy                           1.00     28480
+   macro avg       0.93      0.91      0.92     28480
+weighted avg       1.00      1.00      1.00     28480
+Time taken: 57.963170528411865
+========================================
+
+=== xgb_model ===
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00     28422
+           1       0.84      0.83      0.83        58
+
+    accuracy                           1.00     28480
+   macro avg       0.92      0.91      0.92     28480
+weighted avg       1.00      1.00      1.00     28480
+Time taken: 2.7251405715942383
+========================================
+
+=== nn_model === (5 epochs)
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00     28422
+           1       0.78      0.86      0.82        58
+
+    accuracy                           1.00     28480
+   macro avg       0.89      0.93      0.91     28480
+weighted avg       1.00      1.00      1.00     28480
+
+========================================
+Time taken: 211.44034576416016
+
+
+We choose xgb_model

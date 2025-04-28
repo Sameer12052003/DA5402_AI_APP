@@ -1,0 +1,34 @@
+stages:
+
+  data_pull:
+    cmd: python ml_pipeline/data_pull.py
+    
+    
+  datasplit:
+    cmd: python ml_pipeline/data_split.py
+    deps: 
+      - ml_pipeline/data_split.py
+      - credit_card_data/creditcard.csv
+    outs:
+      - dataset_splits/train.csv
+      - dataset_splits/val.csv
+      - shared_folder/test.csv
+
+  train:
+    cmd: python ml_pipeline/train.py
+    deps:
+      - ml_pipeline/train.py
+      - dataset_splits/train.csv
+      - dataset_splits/val.csv
+    outs:
+      - shared_folder/model.pkl
+    
+
+  evaluate:
+    cmd: python ml_pipeline/evaluate.py
+    deps:
+      - ml_pipeline/evaluate.py
+      - shared_folder/model.pkl
+      - dataset_splits/val.csv
+    outs:
+      - shared_folder/classification_report.txt
