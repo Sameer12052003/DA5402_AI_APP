@@ -7,6 +7,7 @@ services:
     ports:
       - "8000:8000"
 
+
   frontend:
     build: ./frontend
     volumes:
@@ -25,6 +26,7 @@ services:
     volumes:
       - /proc:/host/proc
 
+
   prometheus:
     image: prom/prometheus:latest
     container_name: prometheus
@@ -40,3 +42,5 @@ services:
     restart: unless-stopped
     ports:
       - "3000:3000"  # Grafana Web UI on port 3000
+    volumes:
+      - ./grafana_data:/var/lib/grafana  # <<<<<< Add this line
